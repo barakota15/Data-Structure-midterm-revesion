@@ -1,0 +1,53 @@
+{
+  "id": "sample-quiz",
+  "title": "Frontend Fundamentals",
+  "description": "Test your knowledge of HTML, CSS, and JavaScript.",
+  "timeLimitSeconds": 300,
+  "passingScore": 70,
+  "shuffleQuestions": true,
+  "shuffleOptions": true,
+  "showQuestionList": true,
+  "allowSkip": true,
+  "enforceRequiredBeforeSubmit": true,
+  "visibility": "public",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice_single",
+      "prompt": "Which HTML tag is used to create a hyperlink?",
+      "required": true,
+      "points": 1,
+      "options": ["<link>", "<a>", "<href>", "<nav>"],
+      "correctAnswer": "<a>",
+      "explanation": "The <a> tag defines a hyperlink in HTML."
+    },
+    {
+      "id": "q2",
+      "type": "true_false",
+      "prompt": "CSS stands for Cascading Style Sheets.",
+      "required": true,
+      "points": 1,
+      "correctAnswer": true,
+      "explanation": "CSS is the acronym for Cascading Style Sheets."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice_multi",
+      "prompt": "Select all JavaScript primitives.",
+      "required": false,
+      "points": 2,
+      "options": ["string", "number", "object", "boolean"],
+      "correctAnswers": ["string", "number", "boolean"],
+      "explanation": "Primitives include string, number, boolean, null, undefined, symbol, and bigint."
+    },
+    {
+      "id": "q4",
+      "type": "short_text",
+      "prompt": "Name a CSS layout system used to build two-dimensional grids.",
+      "required": false,
+      "points": 1,
+      "acceptedAnswers": ["grid", "css grid", "grid layout"],
+      "explanation": "CSS Grid is a two-dimensional layout system."
+    }
+  ]
+}
